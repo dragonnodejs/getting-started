@@ -1,5 +1,5 @@
 # Chapter1 - The structure of an application
-* In the package.json there is the dependency for DragonNode.js
+- In the package.json there is the dependency for DragonNode.js
 ```javascript
 {
     "dependencies": {
@@ -7,8 +7,7 @@
     }
 }
 ```
-
-* The "app.js" contain the configuration for the application with all modules and bundles and their configuration
+- The "app.js" contain the configuration for the application with all modules and bundles and their configuration
 ```javascript
 // Load the libraries and modules
 
@@ -24,8 +23,7 @@ var config = {
 };
 require('dragonnodejs')(config);
 ```
-
-* A module is a CommonJS module exports a function getting configuration, libraries container and service container
+- A module is a CommonJS module exports a function getting configuration, libraries container and service container
 ```javascript
 /**
  * Description for the module

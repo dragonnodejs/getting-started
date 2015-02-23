@@ -1,5 +1,5 @@
 # Chapter2 - The "Hello World!" with express
-* In the package.json we add the dependency for Express
+- In the package.json we add the dependency for Express
 ```javascript
 {
     "dependencies": {
@@ -8,8 +8,7 @@
     }
 }
 ```
-
-* We add the library definition for the express library into the "app.js", so express is available in the libraries container
+- We add the library definition for the express library into the "app.js", so express is available in the libraries container
 ```javascript
 var config = {
     libraries: {
@@ -18,10 +17,9 @@ var config = {
     directory: __dirname + '/modules/',
     ...
 ```
-
-* We add an "app.js" module to initialize express with the express library from the library container
-* We use the port from the configuration
-* We store the app service into the service container
+- We add an "app.js" module to initialize express with the express library from the library container
+- We use the port from the configuration
+- We store the app service into the service container
 ```javascript
 /*
  * Express initialization and app service
@@ -40,8 +38,7 @@ module.exports = function (config, libraries, services) {
     services.app = app;
 };
 ```
-
-* We add a "helloworld.js" module to define a route with the app service from the service container serving the "Hello World!"
+- We add a "helloworld.js" module to define a route with the app service from the service container serving the "Hello World!"
 ```javascript
 /**
  * Serves the "Hello World!"
@@ -57,8 +54,7 @@ module.exports = function (config, libraries, services) {
     });
 };
 ```
-
-* We add both modules with their configuration to the "app.js"
+- We add both modules with their configuration to the "app.js"
 ```javascript
     ...
     directory: __dirname + '/modules/',
@@ -72,5 +68,4 @@ module.exports = function (config, libraries, services) {
     }
 };
 ```
-
-* Now we run "npm install", start the app with "PORT=%PORT% npm start" and open the page in the browser "http://localhost:%PORT%/"
+- Now we run "npm install", start the app with "PORT=%PORT% npm start" and open the page in the browser "http://localhost:%PORT%/"

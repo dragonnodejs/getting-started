@@ -1,5 +1,5 @@
 # Chapter2 - The "Hello World!" with express
-* In the package.json we add the dependency for the bundle DragonNode.js Express and remove the dependency for express
+- In the package.json we add the dependency for the bundle DragonNode.js Express and remove the dependency for express
 ```javascript
 {
     "dependencies": {
@@ -8,8 +8,7 @@
     }
 }
 ```
-
-* We remove the library definition for the express library, remove the "app.js" module and add the module of the bundle to the "app.js"
+- We remove the library definition for the express library, remove the "app.js" module and add the module of the bundle to the "app.js"
 ```javascript
 // Load the libraries and modules
 
@@ -30,5 +29,4 @@ var config = {
 };
 require('dragonnodejs')(config);
 ```
-
-* Now we run "npm install", start the app with "PORT=%PORT% npm start" and open the page in the browser "http://localhost:%PORT%/"
+- Now we run "npm install", start the app with "PORT=%PORT% npm start" and open the page in the browser "http://localhost:%PORT%/"

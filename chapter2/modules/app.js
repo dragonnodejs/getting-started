@@ -1,6 +1,6 @@
 "use strict";
 
-/*
+/**
  * Express initialization and app service
  * @example
     app: {
