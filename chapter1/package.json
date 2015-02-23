@@ -1,0 +1,12 @@
+{
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "dragonnodejs": "^4.0.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dragonnodejs/app-skeleton.git"
+    }
+}
