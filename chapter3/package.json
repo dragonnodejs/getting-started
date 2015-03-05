@@ -5,9 +5,5 @@
     "dependencies": {
         "dragonnodejs": "^4.0.2",
         "dragonnodejs-express": "^2.0.1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/dragonnodejs/app-skeleton.git"
     }
 }
