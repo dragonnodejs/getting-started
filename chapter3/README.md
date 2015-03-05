@@ -1,4 +1,4 @@
-# Chapter2 - The "Hello World!" with express
+# Chapter3 - Use bundles for common features
 - In the package.json we add the dependency for the bundle DragonNode.js Express and remove the dependency for express
 ```javascript
 {
