@@ -1,6 +1,7 @@
 # DragonNode.js
 Welcome. Here you can find the first steps you need to understand and to work with DragonNode.js.
 
+- [Chapter0 - The "non structured" way](chapter0)
 - [Chapter1 - The structure of an application](chapter1)
 - [Chapter2 - The "Hello World!" with express](chapter2)
 - [Chapter3 - Use bundles for common features](chapter3)
