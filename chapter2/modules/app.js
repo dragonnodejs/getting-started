@@ -4,7 +4,7 @@
  * Express initialization and app service
  * @example
     app: {
-        port: process.env.PORT
+        port: process.env.PORT || 80
     }
  */
 

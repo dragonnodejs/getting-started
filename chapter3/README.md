@@ -18,7 +18,7 @@ var config = {
         npm: [
             [require('dragonnodejs-express'), {
                 app: {
-                    port: process.env.PORT
+                    port: process.env.PORT || 80
                 }
             }]
         ],
@@ -29,4 +29,4 @@ var config = {
 };
 require('dragonnodejs')(config);
 ```
-- Now we run "npm install", start the app with "PORT=%PORT% npm start" and open the page in the browser "http://localhost:%PORT%/"
+- Now we run "npm install", start the app with "npm start" and open the page in the browser "http://localhost/"

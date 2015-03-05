@@ -10,7 +10,7 @@ var config = {
     modules: {
         directory: {
             app: {
-                port: process.env.PORT
+                port: process.env.PORT || 80
             },
             helloworld: {}
         }

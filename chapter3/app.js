@@ -8,7 +8,7 @@ var config = {
         npm: [
             [require('dragonnodejs-express'), {
                 app: {
-                    port: process.env.PORT
+                    port: process.env.PORT || 80
                 }
             }]
         ],
