@@ -4,7 +4,7 @@
 {
     "dependencies": {
         "dragonnodejs": "^4.0.4",
-        "dragonnodejs-express": "^2.0.1"
+        "dragonnodejs-express": "^2.1.1"
     }
 }
 ```
