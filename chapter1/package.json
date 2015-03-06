@@ -3,6 +3,6 @@
         "start": "node app.js"
     },
     "dependencies": {
-        "dragonnodejs": "^4.0.2"
+        "dragonnodejs": "^4.0.4"
     }
 }

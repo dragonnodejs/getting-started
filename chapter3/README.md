@@ -3,7 +3,7 @@
 ```javascript
 {
     "dependencies": {
-        "dragonnodejs": "^4.0.2",
+        "dragonnodejs": "^4.0.4",
         "dragonnodejs-express": "^2.0.1"
     }
 }
