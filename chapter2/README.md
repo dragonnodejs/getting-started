@@ -68,4 +68,4 @@ module.exports = function (config, libraries, services) {
     }
 };
 ```
-- Now we run "npm install", start the app with "npm start" and open the page in the browser "http://localhost/"
+- Now we run "npm install", start the app with "node app.js" and open the page in the browser "http://localhost/"

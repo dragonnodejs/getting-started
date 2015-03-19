@@ -1,7 +1,4 @@
 {
-    "scripts": {
-        "start": "node app.js"
-    },
     "dependencies": {
         "dragonnodejs": "^4.0.4"
     }
