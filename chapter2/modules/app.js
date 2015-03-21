@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * Express initialization and app service
