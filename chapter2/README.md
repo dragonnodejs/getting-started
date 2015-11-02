@@ -2,34 +2,36 @@
 - In the package.json we add the dependency for Express
 ```javascript
 {
-    "dependencies": {
-        "dragonnodejs": "^4.0.4",
-        "express": "^4.11.0"
-    }
+  "dependencies": {
+    "dragonnodejs": "^5.0.1",
+    "express": "^4.13.3"
+  }
 }
 ```
 - We add the library definition for the express library into the "app.js", so express is available in the libraries container
 ```javascript
-var config = {
+// Load the libraries and modules
+
+let config = {
+    directory: __dirname + '/',
     libraries: {
         express: require('express')
     },
-    directory: __dirname + '/modules/',
     ...
 ```
 - We add an "app.js" module to initialize express with the express library from the library container
 - We use the port from the configuration
 - We store the app service into the service container
 ```javascript
-/*
+/**
  * Express initialization and app service
  * @example
-    app: {
+    ['modules/app', {
         port: process.env.PORT || 80
-    }
+    }]
  */
 
-module.exports = function (config, libraries, services) {
+module.exports = (config, libraries, services) => {
     var express = libraries.express;
 
     var app = express();
@@ -43,13 +45,13 @@ module.exports = function (config, libraries, services) {
 /**
  * Serves the "Hello World!"
  * @example
-    helloworld: {}
+    ['modules/helloworld', {}]
  */
 
-module.exports = function (config, libraries, services) {
+module.exports = (config, libraries, services) => {
     var app = services.app;
 
-    app.get('/', function (req, res) {
+    app.get('/', (req, res) => {
         res.send('Hello World!');
     });
 };
@@ -57,15 +59,13 @@ module.exports = function (config, libraries, services) {
 - We add both modules with their configuration to the "app.js"
 ```javascript
     ...
-    directory: __dirname + '/modules/',
-    modules: {
-        directory: {
-            app: {
-                port: process.env.PORT || 80
-            },
-            helloworld: {}
-        }
-    }
+    modules: [
+        ['modules/app', {
+            port: process.env.PORT || 80
+        }],
+        ['modules/helloworld', {}]
+    ]
 };
+require('dragonnodejs')(config);
 ```
 - Now we run "npm install", start the app with "node app.js" and open the page in the browser "http://localhost/"

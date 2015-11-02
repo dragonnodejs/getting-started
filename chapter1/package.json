@@ -1,5 +1,5 @@
 {
-    "dependencies": {
-        "dragonnodejs": "^4.0.4"
-    }
+  "dependencies": {
+    "dragonnodejs": "^5.0.1"
+  }
 }

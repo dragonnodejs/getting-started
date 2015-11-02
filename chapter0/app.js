@@ -1,8 +1,8 @@
-var express = require('express');
+const express = require('express');
 
-var app = express();
+let app = express();
 app.listen(process.env.PORT || 80);
 
-app.get('/', function (req, res) {
+app.get('/', (req, res) => {
     res.send('Hello World!');
 });

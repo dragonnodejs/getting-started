@@ -1,12 +1,12 @@
 # Chapter0 - The "non structured" way
 - The source of the example looks very clear, ok its a hello world, of course its very clear what happens
 ```javascript
-var express = require('express');
+const express = require('express');
 
-var app = express();
+let app = express();
 app.listen(process.env.PORT || 80);
 
-app.get('/', function (req, res) {
+app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 ```

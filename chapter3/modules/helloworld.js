@@ -3,13 +3,13 @@
 /**
  * Serves the "Hello World!"
  * @example
-    helloworld: {}
+    ['modules/helloworld', {}]
  */
 
-module.exports = function (config, libraries, services) {
+module.exports = (config, libraries, services) => {
     var app = services.app;
 
-    app.get('/', function (req, res) {
+    app.get('/', (req, res) => {
         res.send('Hello World!');
     });
 };

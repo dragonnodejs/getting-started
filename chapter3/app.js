@@ -2,19 +2,15 @@
 
 // Load the libraries and modules
 
-var config = {
-    directory: __dirname + '/modules/',
-    modules: {
-        npm: [
-            [require('dragonnodejs-express'), {
-                app: {
-                    port: process.env.PORT || 80
-                }
+let config = {
+    directory: __dirname + '/',
+    modules: [
+        [require('dragonnodejs-express'),
+            ['modules/app', {
+                port: process.env.PORT || 80
             }]
         ],
-        directory: {
-            helloworld: {}
-        }
-    }
+        ['modules/helloworld', {}]
+    ]
 };
 require('dragonnodejs')(config);

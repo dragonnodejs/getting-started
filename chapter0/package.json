@@ -1,5 +1,5 @@
 {
-    "dependencies": {
-        "express": "^4.11.0"
-    }
+  "dependencies": {
+    "express": "^4.13.3"
+  }
 }

@@ -1,6 +1,6 @@
 {
-    "dependencies": {
-        "dragonnodejs": "^4.0.4",
-        "express": "^4.11.0"
-    }
+  "dependencies": {
+    "dragonnodejs": "^5.0.1",
+    "express": "^4.13.3"
+  }
 }
