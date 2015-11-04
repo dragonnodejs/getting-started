@@ -3,10 +3,10 @@
 // Load the libraries and modules
 
 let config = {
-    directory: __dirname + '/',
     libraries: {
         express: require('express')
     },
+    directory: __dirname + '/',
     modules: [
         ['modules/app', {
             port: process.env.PORT || 80

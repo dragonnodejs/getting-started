@@ -13,7 +13,6 @@
 // Load the libraries and modules
 
 let config = {
-    directory: __dirname + '/',
     libraries: {
         express: require('express')
     },
@@ -59,6 +58,7 @@ module.exports = (config, libraries, services) => {
 - We add both modules with their configuration to the "app.js"
 ```javascript
     ...
+    directory: __dirname + '/',
     modules: [
         ['modules/app', {
             port: process.env.PORT || 80
