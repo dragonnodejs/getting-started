@@ -8,9 +8,7 @@ let config = {
     },
     directory: __dirname + '/',
     modules: [
-        ['modules/app', {
-            port: process.env.PORT || 80
-        }],
+        ['modules/app', { port: process.env.PORT || 80 }],
         ['modules/helloworld', {}]
     ]
 };

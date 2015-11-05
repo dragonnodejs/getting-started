@@ -5,11 +5,9 @@
 let config = {
     directory: __dirname + '/',
     modules: [
-        [require('dragonnodejs-express'),
-            ['modules/app', {
-                port: process.env.PORT || 80
-            }]
-        ],
+        [require('dragonnodejs-express'), [
+            ['modules/app', { port: process.env.PORT || 80 }]
+        ]],
         ['modules/helloworld', {}]
     ]
 };

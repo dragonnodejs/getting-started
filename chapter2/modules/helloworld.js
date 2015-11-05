@@ -7,7 +7,7 @@
  */
 
 module.exports = (config, libraries, services) => {
-    var app = services.app;
+    let app = services.app;
 
     app.get('/', (req, res) => {
         res.send('Hello World!');
